@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout</title>
+        <style>
+
+            #img1,#banner{
+                animation-duration: 5000ms;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+    
+            #img1{
+                width:200px;
+                position: relative;
+                animation-name: imgSlide;
+            }
+    
+            #banner{
+                border:1px solid black;
+                padding:20px;            
+                animation-name: flickeringBorder;
+            }
+    
+            @keyframes imgSlide{
+                from{
+                    left:0px;
+                    transform: rotate(360deg);
+                }
+                to{
+                    left:900px;
+                    transform: rotate(0deg);
+                }
+            }
+    
+            @keyframes flickeringBorder{
+                0% {border: 5px dotted royalblue;}
+                25% {border: 5px dashed royalblue;}
+                50% {border: 5px solid royalblue;}
+                100% {border:5px dotted royalblue;}
+            }
+        </style>
+    </head>
+    <body>
+        <div id="banner">
+            <img src="pic.jpg" id="img1"/>
+        </div>
+    </body>
+</html>

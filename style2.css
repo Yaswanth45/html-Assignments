@@ -1,0 +1,26 @@
+h1{
+    font-family:italic ;
+    border-radius: 10px 10px 0 0;
+    
+    color: #000000;
+    padding: 10px;
+}
+table{
+    border:2px solid burlywood;
+    border-radius: 10px 10px 10px 10px;
+    width:40%;
+    margin:auto;
+}
+th,td{
+    padding:5px;
+    border-bottom:1px dotted brown;
+}
+tr:last-child td{
+    border-bottom:1;
+}
+td:nth-child(1),td:nth-child(3){
+    text-align: right;
+}
+td:nth-child(4),td:nth-child(5){
+    text-align: center;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>My Profile</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<style>
+	    @media only screen and (min-width:768px) {
+        	body {
+           	 background-color:black;
+        	}
+        
+    	    }
+
+   	 @page {
+        	size : landscape;
+   	 }
+    
+    	@media print {
+       		 body {
+            		background-color : blue;
+        	}
+        
+        h1, h2, h3 {
+            color : black;
+        }
+        nav {
+            display : none;
+        }
+        a::after {
+            content : " <" attr(href) ">";
+            color:lightcoral;
+        }
+    }
+
+	</style>
+	<body >
+		<header>
+			<img src="67892.jpg" alt="U are not allowed to view" align="left" width="100" height="120">
+			<center>
+			<h1>My Profile</h1>
+			</center>
+		</header>
+		<nav>
+			<a href="About me.html"target="myframe">About Me</a>
+			<a href="Education.html"target="myframe">Education Details</a>
+			<a href="contact.html"target="myframe">Contact Me</a>
+	
+		</nav>
+		<section>	
+			<iframe id="myframe" name="myframe"></iframe>
+		</section>
+		<footer>
+       			 &reg; Visit Again
+    		</footer>
+	</body>
+</html>
